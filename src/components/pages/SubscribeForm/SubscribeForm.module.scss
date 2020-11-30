@@ -1,0 +1,120 @@
+.SubscribeForm {
+  margin-top: 64px;
+}
+
+.form {
+  margin-top: 48px;
+  display: grid;
+  grid-template-areas:
+    "intro"
+    "visual inputs";
+  grid-template-rows: 285px calc(100% - 285px);
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 32px;
+  grid-auto-flow: row;
+  padding-bottom: 96px;
+  @media (max-width: 1365px) {
+    grid-template-areas:
+      "introTablet visualTablet"
+      "introTablet inputsTablet";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 32px;
+  }
+  @media (max-width: 767px) {
+    grid-template-areas:
+      "introTablet"
+      "visualTablet"
+      "inputsTablet";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+  }
+}
+
+#intro {
+  grid-area: intro;
+}
+
+.intro {
+  @media (max-width: 1365px) {
+    grid-area: introTablet;
+  }
+}
+
+#visual {
+  grid-area: visual;
+}
+
+.visual {
+  @media (max-width: 1365px) {
+    grid-area: visualTablet;
+  }
+}
+
+#inputs {
+  grid-area: inputs;
+}
+
+.inputs {
+  @media (max-width: 1365px) {
+    grid-area: inputsTablet;
+  }
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border: none;
+  &:focus {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  outline: none;
+  height: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 24px;
+  @media (max-width: 1365px) {
+    font-size: 14px;
+  }
+  @media (max-width: 1365px) {
+    font-size: 12px;
+  }
+  &:last-of-type {
+    margin-bottom: 32px;
+    @media (max-width: 1365px) {
+      margin-bottom: 28px;
+    }
+  }
+  &::placeholder {
+    font-size: 16px;
+    line-height: 170%;
+    color: #676767;
+    @media (max-width: 1365px) {
+      font-size: 14px;
+    }
+    @media (max-width: 1365px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.button {
+  font-size: 30px;
+  line-height: 110%;
+  font-family: "SpaseGrotesk", sans-serif;
+  font-weight: normal;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #000000;
+  border: none;
+  background-color: transparent;
+  margin-right: auto;
+  @media (max-width: 1365px) {
+    font-size: 20px;
+  }
+}

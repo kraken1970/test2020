@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../assets/fonts/HelveticaNeueCyrRoman.eot');
+	src: local('HelveticaNeueCyr-Roman'),
+		url('../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyrRoman.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/HelveticaNeueCyrRoman.woff') format('woff'),
+		url('../assets/fonts/HelveticaNeueCyrRoman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: "SpaseGrotesk";
+  src: url("../assets/fonts/SpaseGrotesk/SpaseGrotesk.eot");
+  src: local("SpaseGrotesk"), 
+    url("../assets/fonts/SpaseGrotesk/SpaseGrotesk.eot?#iefix") format("embedded-opentype"),
+   
+    url("../assets/fonts/SpaseGrotesk/SpaseGrotesk.woff") format("woff"),
+    url("../assets/fonts/SpaseGrotesk/SpaseGrotesk.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

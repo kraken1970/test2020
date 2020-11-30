@@ -1,0 +1,50 @@
+.CardBlock {
+  padding-top: 48px;
+  padding-bottom: 96px;
+  display: flex;
+	flex-wrap: wrap;
+	@media (max-width: 1365px) {
+		padding-bottom: 76px;
+		flex-direction: column;
+  }
+  @media (max-width: 767px) {
+    padding-top: 0;
+    margin-top: 34px;
+	}
+}
+
+.card {
+  margin-right: 32px;
+  margin-bottom: 32px;
+  max-width: calc(50% - 16px);
+  &:nth-child(2),
+  &:nth-child(4) {
+    margin-right: 0;
+  }
+  &:nth-child(3),
+  &:nth-child(4) {
+    margin-bottom: 0;
+		flex-direction: row-reverse;
+		@media (max-width: 1365px) {
+			flex-direction: row;
+			margin-bottom: 48px;
+		}
+  }
+  &:first-of-type div::before {
+    left: 0;
+  }
+
+  &:nth-of-type(3) div,
+  &:nth-of-type(4) div {
+    padding-left: 0px;
+    padding-right: 32px;
+    margin-right: 0;
+	}
+	
+	@media (max-width: 1365px) {
+		width: 100%;
+		max-width: 100%;
+		margin-right: 0;
+		margin-bottom: 48px;
+	}
+}

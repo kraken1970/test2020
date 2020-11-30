@@ -1,0 +1,107 @@
+.FormVisual {
+  background-color: #f4f4f4;
+  padding-top: 48px;
+	padding-left: 48px;
+  height: 517px;
+  @media (max-width: 1365px) {
+    height: 248px;
+    padding-top: 32px;
+    padding-left: 16px;
+  }
+  @media (max-width: 767px) {
+    height: 239px;
+    padding-top: 24px;
+    padding-left: 16px;
+  }
+}
+
+.subTitle {
+  margin-bottom: 32px;
+  @media (max-width: 1365px) {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+.priceBlock {
+  display: flex;
+}
+
+.price {
+  color: #000000;
+  margin-bottom: 48px;
+  margin-right: 48px;
+  @media (max-width: 1365px) {
+    margin-right: 18px;
+    margin-bottom: 24px;
+  }
+  .numeric {
+    font-size: 52px;
+    line-height: 100%;
+    margin-bottom: 14px;
+    @media (max-width: 1365px) {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    @media (max-width: 767px) {
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+  }
+  p {
+    font-size: 24px;
+    line-height: 170%;
+    @media (max-width: 1365px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.discountBlock {
+  background-color: #fef653;
+  padding: 10px 20px;
+  max-height: 73px;
+  @media (max-width: 1365px) {
+    max-height: 61px;
+    h2 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 1365px) {
+    max-height: 56px;
+    h2 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 8px;
+    }
+  }
+}
+
+.discountText {
+  font-size: 14px;
+  margin-bottom: 4px;
+  @media (max-width: 1365px) {
+    font-size: 10px;
+  }
+  @media (max-width: 767px) {
+    font-size: 8px;
+  }
+}
+
+.oldPrice {
+  font-size: 24px;
+  line-height: 170%;
+	text-decoration: line-through;
+  margin-bottom: 192px;
+  @media (max-width: 1365px) {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  @media (max-width: 767px) {
+    font-size: 24px;
+  } 
+}
